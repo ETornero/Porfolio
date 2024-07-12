@@ -579,6 +579,7 @@ body.dark {
 
     #side-bar {
         width: 100vw !important;
+        height: 95vh;
         box-shadow: none;
     }
 
@@ -666,7 +667,7 @@ body.dark {
         flex-direction: column;
         gap: 50px;
         width: 90%;
-        height: 80%;
+        height: 95%;
     }
 
     .services .item {
