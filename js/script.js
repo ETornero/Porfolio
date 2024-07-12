@@ -100,7 +100,7 @@ function openSection(value) {
         
         let targetSection = document.getElementById(value+'-section');
         if(targetSection != null) targetSection.classList.add('opened');
-        document.body.style.backgroundImage = 'url(../resources/'+value+'Background.jpg)';
+        document.body.style.backgroundImage = 'url(./resources/'+value+'Background.jpg)';
 
         changeSectionReady = true;
 
