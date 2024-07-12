@@ -573,7 +573,7 @@ body.dark {
 @media only screen and (max-width: 1024px) {
     
     body {
-        height: 100vh;
+        height: 95vh;
         background-position: center;
     }
 
