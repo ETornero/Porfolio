@@ -580,6 +580,7 @@ body.dark {
     #side-bar {
         width: 100vw !important;
         box-shadow: none;
+        justify-content: start;
     }
 
     #side-bar.closed {
@@ -588,6 +589,7 @@ body.dark {
 
     #toggle-sidebar {
         right: 0;
+        bottom: 10%;
     } 
   
     #side-bar.closed #toggle-sidebar {
