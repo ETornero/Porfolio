@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Tornero Medina</title>
+    <meta name="description" content="Soy Desarrollador de Videojuegos y Aplicaciones Web"/>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel='canonical' href='http://127.0.0.1:5500/index.html' />
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="dark">
+
+    <div id="side-bar" class="closed">
+        <div class="profile">
+            <div class="profile-image">
+                <img src="./resources/profileImage.png" alt="Eric profile image" title="Eric profile image" width="auto" height="auto" loading="eager">
+            </div>
+            <p class="profile-name">Eric Tornero</p>
+            <div class="social-networks">
+                <a class="social-item" href="https://www.linkedin.com/in/erictornero/" target="_blank">
+                    <img src="./resources/linkedinLogo.png"  alt="Linkedin icone image" title="Linkedin icone" width="auto" height="auto" loading="eager">
+                </a>
+                <a class="social-item" href="https://eric-tornero.itch.io/" target="_blank">
+                    <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="eager">
+                </a>
+                <a class="social-item" href="https://github.com/ETornero" target="_blank">
+                    <img src="./resources/githubLogo.png" alt="Github icone image" title="Github icone" width="auto" height="auto" loading="eager">
+                </a>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <div class="main-menu-item selected" data-id="home">
+                <img src="./resources/homeIcone.png" alt="Home image icone" title="Home image" width="20px" height="20px" loading="eager">
+                <p>Inicio</p>
+            </div>
+            <div class="main-menu-item" data-id="about">
+                <img src="./resources/aboutIcone.png" alt="About me image icone" title="About me image" width="20px" height="20px" loading="eager">
+                <p>Sobre Mi</p>
+            </div>
+            <div class="main-menu-item" data-id="projects">
+                <img src="./resources/projectsIcone.png" alt="Projects image icone" title="Projects image" width="20px" height="20px" loading="eager">
+                <p>Proyectos</p>
+            </div>
+            <div class="main-menu-item" data-id="services">
+                <img src="./resources/serviceIcone.png" alt="Service image icone" title="Service image" width="20px" height="20px" loading="eager">
+                <p>Servicios</p>
+            </div>
+            <div class="main-menu-item" data-id="contact">
+                <img src="./resources/contactIcone.png" alt="Contact image icone" title="Contact image" width="20px" height="20px" loading="eager">
+                <p>Contacto</p>
+            </div>
+            <div id="toggle-sidebar"><img src="./resources/toggleButton.png" alt="Sidebar toggle image" title="Toggle image" width="20px" height="20px" loading="eager"></div>
+        </nav>
+        <div class="legal">© 2024 Eric Tornero Medina <br>Todos los derechos reservados</div>
+    </div>
+    <div id="content-container" class="full">
+        <div id="home-section" class="opened">
+            <h1 id="title-text" class="title">Eric Tornero Medina</h1>
+            <p id="subtitle-text" class="subtitle">Desarrollador de Videojuegos y Aplicaciones Web</p>
+        </div>
+        <div id="about-section">
+            <div class="content">
+                <div class="solo">
+                    <h2 class="content-title">¿Quien soy?</h2>
+                    <div class="data-container">
+                        <div class="miniature">
+                            <img src="./resources/profileImage.png" alt="About image" title="About profile image" width="auto" height="auto" loading="lazy">
+                        </div>
+                        <div class="data">
+                            <p class="data-suptitle">Desarrollador de Videojuegos</p>
+                            <p class="data-title">Eric Tornero Medina</p>
+                            <p class="data-description">
+                                Soy un desarrollador de videojuegos y aplicaciones web con experiencia en la creación de juegos independientes y aplicaciones web. 
+                                He tenido el placer de desarrollar algunos títulos que reflejan mi compromiso y pasión por este campo, 
+                                además de haber trabajado en diversas aplicaciones web que demuestran mi versatilidad y habilidades técnicas. 
+                                Disfruto explorando nuevas ideas y plasmando mi creatividad en cada proyecto, ya sea en el ámbito de los videojuegos o en el desarrollo web. 
+                                Mi objetivo es seguir creciendo y brindar experiencias nuevas y auténticas en ambos campos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="solo">
+                    <h2 class="content-title">Experiencia Laboral</h2>
+                    <div class="data-container">
+                        <div class="data-trajectory">
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Desarrollador web</p>
+                                    <p class="data-date">nov. 2023 - sep. 2024</p>
+                                </div>
+                                <p class="data-description">M Automoción, Barcelona</p>
+                                <ul>
+                                    <li>Creación de una gran cantidad de páginas con WordPress y HTML.</li>
+                                    <li>Optimización del SEO de las webs.</li>
+                                    <li>Gestión de productos (e-commerce).</li>
+                                </ul> 
+                            </div>
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Programador de videojuegos</p>
+                                    <p class="data-date">sep. 2022 - feb. 2023</p>
+                                </div>
+                                <p class="data-description">Ivanovich Games S.L, Barcelona</p>
+                                <ul>
+                                    <li>Desarrollo de juegos en realidad virtual.</li>
+                                    <li>Creación de escenarios, con una gran cantidad de elementos.</li>
+                                    <li>Programación de mecánicas únicas y elementos del juego.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Técnico, reparación e instalación</p>
+                                    <p class="data-date">sep. 2019 - feb. 2020</p>
+                                </div>
+                                <p class="data-description">Imad Computers, Tarragona</p>
+                                <ul>
+                                    <li>Reparación de ordenador, consolas, y otros dispositivos/aparatos.</li>
+                                    <li>Instalación de sistemas operativos y software.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solo">
+                    <h2 class="content-title">Estudios</h2>
+                    <div class="data-container">
+                        <div class="data-trajectory">
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Desarrollo de aplicaciones web (CFGS)</p>
+                                    <p class="data-date">sep. 2023 - may. 2024</p>
+                                </div>
+                                <p class="data-description">Instituto Escuela del Trabajo de Barcelona, Barcelona</p>
+                            </div>
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Desarrollo de Videojuegos (CFGS)</p>
+                                    <p class="data-date">sep. 2021 - may. 2023</p>
+                                </div>
+                                <p class="data-description">Innovación en Formación Profesional, Hospitalet</p>
+                            </div>
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Desarrollo de Aplicaciones Multiplataforma (CFGS)</p>
+                                    <p class="data-date">sep. 2020 - feb. 2021</p>
+                                </div>
+                                <p class="data-description">Institut Eugeni d'Ors, Vilafranca</p>
+                            </div>
+                            <div>
+                                <div class="trajectory-header">
+                                    <p class="data-suptitle">Sistemas Microinformáticos y Redes (CFGM)</p>
+                                    <p class="data-date">sep. 2018 - may. 2020</p>
+                                </div>
+                                <p class="data-description">Ernest Lluch I Martin, Cunit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solo">
+                    <h2 class="content-title">Destrezas</h2>
+                    <div class="habilities">
+                        <div class="item">
+                            <p class="title">Unity</p>
+                            <div class="percent-bar"><div style="width: 90%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">C#</p>
+                            <div class="percent-bar"><div style="width: 75%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">HTML, JS, CSS</p>
+                            <div class="percent-bar"><div style="width: 90%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">PHP</p>
+                            <div class="percent-bar"><div style="width: 75%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Node.js</p>
+                            <div class="percent-bar"><div style="width: 66%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Laravel</p>
+                            <div class="percent-bar"><div style="width: 33%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">SEO</p>
+                            <div class="percent-bar"><div style="width: 50%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Paquete Office</p>
+                            <div class="percent-bar"><div style="width: 75%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Aseprite</p>
+                            <div class="percent-bar"><div style="width: 33%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Blender</p>
+                            <div class="percent-bar"><div style="width: 33%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">MagicaVoxel</p>
+                            <div class="percent-bar"><div style="width: 66%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Audacity</p>
+                            <div class="percent-bar"><div style="width: 33%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Unreal Engine</p>
+                            <div class="percent-bar"><div style="width: 33%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">C++</p>
+                            <div class="percent-bar"><div style="width: 50%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solo">
+                    <h2 class="content-title">Idiomas</h2>
+                    <div class="habilities">
+                        <div class="item">
+                            <p class="title">Castellano - Nativo</p>
+                            <div class="percent-bar"><div style="width: 100%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Catalán - Nativo</p>
+                            <div class="percent-bar"><div style="width: 100%;"></div></div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Inglés</p>
+                            <div class="percent-bar"><div style="width: 33%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solo">
+                    <h2 class="content-title">Currículum</h2>
+                    <div class="data-container">
+                        <img id="curriculum" src="./resources/curriculumCensored.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-section">
+            <div class="content">
+                <div class="solo">
+                    <h2 class="content-title">Proyectos</h2>
+                    <div class="projects">
+                        <div class="data-container">
+                            <div id="voxland-miniature" class="miniature">
+                                <img src="./resources/voxlandMiniature.png" alt="VoxLand image" title="VoxLand image" width="auto" height="auto" loading="lazy"  onclick="playVideo('voxland-miniature')">
+                                <video id="voxland-video" width="100%" controls style="display: none;">
+                                    <source src="./resources/voxlandTrailer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="data">
+                                <p class="data-suptitle">Point&Click</p>
+                                <p class="data-title">Voxland</p>
+                                <p class="data-description">
+                                    VoxLand es un <span class="resaltedText">juego</span> del género <span class="resaltedText">Point and Click</span>. En esta aventura, asumiremos el papel del protagonista, 
+                                    quien, después de un viaje en barca, sufre un accidente y queda varado en una isla tras el naufragio.
+                                </p>
+                                <div class="social-networks">
+                                    <a class="social-item" href="https://eric-tornero.itch.io/voxland" target="_blank">
+                                        <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="lazy">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-container reverse">
+                            <div id="classnotes-miniature" class="miniature">
+                                <img src="./resources/classnoteMiniature.png" alt="ClassNotes image" title="ClassNotes image" width="auto" height="auto" loading="lazy"   onclick="playVideo('classnotes-miniature')">
+                                <video id="classnotes-video" width="100%" controls style="display: none;">
+                                    <source src="./resources/classnotesTrailer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="data">
+                                <p class="data-suptitle">Plataformas</p>
+                                <p class="data-title">Class Notes</p>
+                                <p class="data-description">
+                                    ClassNotes es una <span class="resaltedText">demo</span> de un juego del género <span class="resaltedText">Plataformas</span> inspirado en el clásico 
+                                    <span class="resaltedText">VVVVVV</span>. En él, adoptaremos el papel de uno de los bocetos de un estudiante que cobrará vida y 
+                                    deberá viajar a través de las páginas de sus apuntes para recuperar frutas pixeladas.
+                                </p>
+                                <div class="social-networks">
+                                    <a class="social-item" href="https://eric-tornero.itch.io/classnotes" target="_blank">
+                                        <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-container">
+                            <div id="phantomfashion-miniature" class="miniature">
+                                <img src="./resources/phantomfashionMiniature.png" alt="Phantom Fashion image" title="Phantom Fashion image" width="auto" height="auto" loading="lazy"   onclick="playVideo('phantomfashion-miniature')">
+                                <video id="phantomfashion-video" width="100%" controls style="display: none;">
+                                    <source src="./resources/phantomfashionTrailer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="data">
+                                <p class="data-suptitle">Graphic History</p>
+                                <p class="data-title">Phantom Fashion</p>
+                                <p class="data-description">
+                                    Phantom Fashion es una <span class="resaltedText">demo</span> de un juego de historia gráfica creado en una <span class="resaltedText">Game Jam de apenas 2 días</span>, 
+                                    reconocido con el premio a la <span class="resaltedText">mejor narrativa</span> y cargado de desafiantes puzzles.
+                                </p>
+                                <div class="social-networks">
+                                    <a class="social-item" href="https://eric-tornero.itch.io/phantomfashion" target="_blank">
+                                        <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-container reverse">
+                            <div id="monekeystreet-miniature" class="miniature">
+                                <img src="./resources/monkeystreetMiniature.png" alt="Monkey Street image" title="Monkey Street image" width="auto" height="auto" loading="lazy"   onclick="playVideo('monekeystreet-miniature')">
+                                <video id="monekeystreet-video" width="100%" controls style="display: none;">
+                                    <source src="./resources/monkeystreetTrailer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="data">
+                                <p class="data-suptitle">Supervivencia</p>
+                                <p class="data-title">Monkey Street</p>
+                                <p class="data-description">
+                                    Monkey Street es una <span class="resaltedText">demo</span> de un juego del género <span class="resaltedText">Supervivencia</span> con una perspectiva de vista aérea 
+                                    <span class="resaltedText">(Top-Down)</span>, inspirado en la saga de juegos <span class="resaltedText">"Comandos"</span>. 
+                                    En este juego, asumiremos el papel de un mono con la capacidad de disparar bananas. 
+                                    Su misión será entrentarse a los humanos que se han convertido en zombies.
+                                </p>
+                                <div class="social-networks">
+                                    <a class="social-item" href="https://eric-tornero.itch.io/comando" target="_blank">
+                                        <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-container">
+                            <div id="runaway-miniature" class="miniature">
+                                <img src="./resources/runawayMiniature.png" alt="Run Away image" title="Run Away image" width="auto" height="auto" loading="lazy"   onclick="playVideo('runaway-miniature')">
+                                <video id="runaway-video" width="100%" controls style="display: none;">
+                                    <source src="./resources/runawayTrailer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="data">
+                                <p class="data-suptitle">Endless Runner</p>
+                                <p class="data-title">Run Away</p>
+                                <p class="data-description">
+                                    Run Away es una <span class="resaltedText">demo</span> de un juego  del género <span class="resaltedText">Endless Runner</span> en el que encarnamos a un valiente 
+                                    caballero adentrándose en las murallas de un castillo para rescatar a unas elfas que han sido atrapadas. 
+                                    En este emocionante juego, deberemos <span class="resaltedText">esquivar trampas, paredes y enemigos</span> que se cruzarán en nuestro camino.
+                                </p>
+                                <div class="social-networks">
+                                    <a class="social-item" href="https://eric-tornero.itch.io/runknight" target="_blank">
+                                        <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="lazy">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services-section">
+           <div class="services">
+                <div class="services-row">
+                    <div class="item">
+                        <img src="./resources/serviceGameIcone.png" alt="Game service icone" title="Game service image" width="50px" height="50px" loading="lazy">
+                        <p class="title">Programación de juegos</p>
+                        <p class="description">
+                            Desarrollo del código y la lógica del juego para Unity utilizando como lenguaje de programación C#.
+                        </p>
+                        <p class="price">
+                            Precio según proyecto
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./resources/serviceWebIcone.png" alt="Web service icone" title="Web service image" width="50px" height="50px" loading="lazy">
+                        <p class="title">Desarrollo de videojuego</p>
+                        <p class="description">
+                            Creación de sitios web desde cero utilizando diversas tecnologías como 
+                            HTML, CSS, JavaScript, y frameworks como React, Angular, Vue.js, etc.
+                        </p>
+                        <p class="price">
+                            50€ x pàgina
+                        </p>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div id="contact-section">
+            <div class="contact">
+                <div>
+                    <p class="title">Datos de Contacto</p>
+                    <div>
+                        <p class="suptitle">Email</p>
+                        <a href="mailto:erictome11@gmail.com" class="description">erictome11@gmail.com</a>
+                    </div>
+                    <div>
+                        <p class="suptitle">Teléfono</p>
+                        <a  href="tel:+34663888451" class="description">663888451</a>
+                    </div>
+                    <div class="social-networks">
+                        <a class="social-item" href="https://www.linkedin.com/in/erictornero/" target="_blank">
+                            <img src="./resources/linkedinLogo.png"  alt="Linkedin icone image" title="Linkedin icone" width="auto" height="auto" loading="eager">
+                        </a>
+                        <a class="social-item" href="https://eric-tornero.itch.io/" target="_blank">
+                            <img src="./resources/itchioLogo.png" alt="Itchio icone image" title="Itchio icone" width="auto" height="auto" loading="eager">
+                        </a>
+                        <a class="social-item" href="https://github.com/ETornero" target="_blank">
+                            <img src="./resources/githubLogo.png" alt="Github icone image" title="Github icone" width="auto" height="auto" loading="eager">
+                        </a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
