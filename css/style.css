@@ -578,6 +578,7 @@ body.dark {
     }
 
     #side-bar {
+        display: none;
         width: 100vw !important;
         box-shadow: none;
         justify-content: start;
