@@ -69,6 +69,12 @@ document.addEventListener("DOMContentLoaded", function() {
         sideBar.classList.toggle('closed');
         contentContainer.classList.toggle('full');
     });
+
+
+    document.getElementById('toggle-language').addEventListener('click', () => {
+        
+        this.getElementById('language-selector').classList.toggle('closed');
+    });
 });
 
 function addCharacterWithDelay(index, delay, target, value) {
