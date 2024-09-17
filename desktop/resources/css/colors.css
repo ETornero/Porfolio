@@ -1,0 +1,71 @@
+@import url('./colors.css');
+
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --light-color: #eeeeee;
+    --light2-color: #dddddd;
+    --light3-color: #ffffff80;
+    --dark-color: #222222;
+    --dark2-color: #444444;
+    --primary-color: #ffffff;
+    --success-color: #3ECF98; 
+    --error-color: #EF6969;
+    --warning-color: #ffd650;
+    --shadow-color: #222222;
+
+    --cell-color: #aed1ca;
+    --win-color: #77cdad;
+    --lose-color: #d97676;
+    --easy-color: #b7e4d3;
+    --medium-color: #f5f4a7;
+    --hard-color: #f19e9e;
+}
+
+.dark-theme {
+    --white-color: #222222;
+    --black-color: #ffffff;
+    --light-color: #333333; 
+    --light2-color: #444444; 
+    --dark-color: #eeeeee; 
+    --dark2-color: #dddddd; 
+    --primary-color: #000000;
+    --success-color: #3ECF98;
+    --error-color: #EF6969;  
+    --shadow-color: #222222;
+
+    --cell-color: #49c4ab;
+    --win-color: #77cdad;
+    --lose-color: #d97676;
+    --easy-color: #52aa88;
+    --medium-color: #ffc750;
+    --hard-color: #ff6161;
+
+    color: white;
+}
+
+.dark-theme img {
+    filter: invert();
+}
+
+.pink-theme {
+    --white-color: #FBC2C9;
+    --black-color: #000000;
+    --light-color: #ffd7db;
+    --light2-color: #ffe0e3;
+    --light3-color: #ffffff80;
+    --dark-color: #3b3030;
+    --dark2-color: #444444;
+    --primary-color: #FBC2C9;
+    --success-color: #3ECF98; 
+    --error-color: #EF6969;
+    --warning-color: #ffd650;
+    --shadow-color: #9b9b9b;
+
+    --cell-color: #aed1ca;
+    --win-color: #77cdad;
+    --lose-color: #d97676;
+    --easy-color: #b7e4d3;
+    --medium-color: #f5f4a7;
+    --hard-color: #f19e9e;
+}

@@ -1,0 +1,226 @@
+@import url('./colors.css');
+
+.mines-windows {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 330px;
+    min-height: 350px;
+    height: 100%;
+}
+
+.mines-options {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 33px; 
+    border-radius: 8px;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+
+.mines-options .option {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100%; 
+    padding: 0px 10px 0px 10px;  
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--white-color);
+
+    transition: background-color 0.3s ease;
+}
+
+.mines-options .option:hover {
+    background-color: var(--light2-color);
+}
+
+.mines-timer {
+    position: absolute;
+    font-weight: 500;
+    right: 10px;
+}
+
+.mines-board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 2px;
+    padding-top: 43px;
+}
+
+.mines-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--cell-color);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.mines-cell.revealed {
+    background-color: var(--white-color);
+    cursor: default;
+}
+
+.mines-board.win .mines-cell {
+    background-color: var(--win-color);
+}
+ 
+.mines-board.lose .mines-cell {
+    background-color: var(--lose-color);
+}
+
+.mines-cell.flag {
+    background-color: var(--white-color);
+}
+
+.mines-windows .menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.50);
+    opacity: 0;
+}
+
+.mines-windows .menu.open {
+    display: flex !important;
+    animation: openMenu 0.4s ease forwards; 
+}
+@keyframes openMenu {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mines-windows .menu.close {
+    animation: closeMenu 0.4s ease forwards; 
+}
+@keyframes closeMenu {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}
+
+.mines-windows .menu .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 12px;
+    background-color: var(--white-color);
+}
+
+.mines-windows .panel label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.mines-windows .panel label p {
+    width: 55%;
+    text-align: right;
+}
+
+.mines-windows .panel label input {
+    width: 50px;
+    border: none;
+    background-color: var(--light2-color);
+    border-radius: 5px;
+    outline: none;
+    padding: 3px;
+}
+
+#mines-options-menu .panel .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#mines-difficult-menu .panel .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#mines-difficult-menu .panel .buttons div:nth-child(1) {
+    background-color: var(--easy-color);
+}
+
+#mines-difficult-menu .panel .buttons div:nth-child(2) {
+    background-color: var(--medium-color);
+}
+
+#mines-difficult-menu .panel .buttons div:nth-child(3) {
+    background-color: var(--hard-color);
+    margin-bottom: 10px;
+}
+
+.mines-windows .panel .buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--light2-color);
+    cursor: pointer;
+    font-size: 14px;
+    width: 80px;
+    transition: background-color 0.3s ease;
+}
+
+.mines-windows .panel .buttons div:hover {
+    background-color: var(--light-color) !important;
+}
+
+.mines-windows .panel .title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#mines-win-menu .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#mines-win-menu .buttons div:nth-child(2){
+    background-color: var(--win-color);
+}

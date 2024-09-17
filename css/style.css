@@ -453,6 +453,13 @@ body.dark {
     color: var(--primary-color);
 }
 
+.data-container .data-suptitle-web {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+}
+
 .data-container .data-title {
     font-size: 35px;
     margin-bottom: 20px;
@@ -913,5 +920,13 @@ body.dark {
     .contact .title {
         font-size: 35px;
         text-align: center;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+    .only-mobile {
+        display: flex;
     }
 } 

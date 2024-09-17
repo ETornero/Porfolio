@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./windows.css');
+@import url('./settings.css');
+@import url('./calculator.css');
+@import url('./calendar.css');
+@import url('./chronometer.css');
+@import url('./clock.css');
+@import url('./mines.css');
+@import url('./sudoku.css');
+@import url('./notes.css');
+@import url('./colors.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Noto Sans", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+img {
+    transition: filter 0.3s ease;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-image: url("../img/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.front-panel {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    z-index: 999;
+
+    animation: turnOn 4s ease forwards;
+}
+
+.front-panel img {
+
+    animation: turnOn 4s ease forwards;
+}
+
+@keyframes turnOn {
+    0% {
+        opacity: 1;
+    }
+    25% {
+    }
+    50% {
+    }
+    90% {
+        opacity: 1;
+        z-index: 999;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -999;
+    }
+}
+
+.clock-container {
+    position: absolute; 
+    top: 100px; 
+    left: calc(50% - 250px);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 500px; 
+    height: 250px; 
+    background-color: rgba(0, 0, 0, 0); 
+}
+
+.time {
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.fast-menu {
+    position: absolute; 
+    top: 50%; 
+    left: calc(50% - 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%; 
+    height: 50px;
+}
+
+.fast-menu .app-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    width: 90px; 
+    height: 90px;
+    padding-top: 5px;
+    border-radius: 12px; 
+    border: none; 
+    cursor: pointer;
+    background-color: var(--light3-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.app-item p {
+    width: 80%;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fast-menu .app-item:hover {
+    background-color: var(--primary-color);
+}
+
+.toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    background-color: var(--primary-color);
+}
+
+.toolbar-item  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-bottom: transparent 3px solid;
+    overflow: hidden;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.toolbar-item:hover  {
+    background-color: var(--primary-color);
+}
+
+.toolbar-item.open {
+    animation: openToolbarItem 0.4s ease;
+}
+@keyframes openToolbarItem {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.toolbar-item.minimized {
+    border-color: var(--dark-color);
+}
+
+.toolbar-item.close {
+    animation: closeToolbarItem 0.3s ease forwards;
+}
+@keyframes closeToolbarItem {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+.toolbar-item.focus {
+    background-color: var(--light-color)
+}

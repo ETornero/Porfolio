@@ -1,0 +1,89 @@
+@import url('./colors.css');
+
+.chronometer-windows {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.chronometer-counter {
+    font-size: 80px;
+}
+
+.chronometer-buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%; 
+    height: 50px;
+}
+
+.chronometer-buttons > div {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 50px; 
+    border-radius: 8px; 
+    background-color: var(--light2-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chronometer-buttons > div:hover {
+    background-color: var(--white-color);
+}
+
+.chronometer-marks {
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden;
+    width: 80%;
+    height: 125px;
+}
+
+.chronometer-marks table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.chronometer-marks th {
+    position: sticky;
+    top: 0;
+    text-align: left;
+    border-bottom: 2px solid var(--light2-color);
+    padding-bottom: 10px;
+    z-index: 1; /* Asegura que el thead esté por encima del tbody */
+}
+
+.chronometer-marks tr td, .chronometer-marks tr th {
+    width: 33%;
+}
+
+.chronometer-marks .times {
+    height: 200px; 
+    margin-top: -10px;
+    overflow-y: auto;
+    padding-right: 20px;
+    margin-right: -40px;
+}
+
+.chronometer-windows .times table {
+    height: 90px;
+}
+
+.chronometer-windows .times tbody {
+    vertical-align: sub;
+}
+
+.chronometer-windows .times td:nth-child(2) {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}

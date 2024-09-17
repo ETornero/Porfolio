@@ -1,0 +1,71 @@
+@import url('./colors.css');
+
+.settings-windows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.settings-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-item .title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.settings-item .sub-title {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.slector {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.selector-item {
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: border-color 0.3s ease;
+}
+
+.selector-item.selected {
+    filter: opacity(0.75);
+}
+.selector-item:hover {
+    filter: opacity(0.75);
+}
+
+.selector-item#default-theme {
+    background-color: #ffffff;
+}
+.selector-item#dark-theme {
+    background-color: #000000;
+}
+.selector-item#pink-theme {
+    background-color: #ffb9e2;
+}
+.selector-item#background1 {
+    background-image: url("../img/background1.jpg");
+}
+.selector-item#background2 {
+    background-image: url("../img/background2.jpg");
+}
+.selector-item#background3 {
+    background-image: url("../img/background3.jpg");
+}
+.selector-item#background4 {
+    background-image: url("../img/background4.jpg");
+}

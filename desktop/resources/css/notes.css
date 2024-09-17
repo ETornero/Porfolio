@@ -1,0 +1,133 @@
+@import url('./colors.css');
+
+.notes-windows {
+    display: flex;
+    gap: 10px;
+    width: 100%; 
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.notes-side-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.notes-board {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+    height: 100%;
+    padding: 7px;
+    padding-bottom: 9px;
+    border-radius: 8px;
+    background-color: var(--light-color);
+}
+
+.notes-add-button {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 14px);
+    height: 33px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--warning-color);
+
+    transition: background-color 0.3s ease;
+}
+
+.notes-add-button:hover {
+    background-color: var(--light2-color);
+}
+
+.notes-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: calc(100% + 48px);
+    height: calc(100% - 45px);
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-left: 20px;
+}
+
+.notes-board input, .notes-board textarea {
+    background-color: var(--light2-color);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+#note-title {
+    padding: 5px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    height: 50px;
+}
+
+#note-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    word-wrap: break-word;
+    resize: none;
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.notes-save-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 33px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--success-color);
+
+    transition: background-color 0.3s ease;
+}
+
+.notes-save-button:hover {
+    background-color: var(--light2-color);
+}
+
+.note-item {
+    display: 1;
+    justify-content: left;
+    align-items: center;
+    padding: 12px;
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--light2-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Eric Tornero Medina | Proyectos web</title>
+    <link rel="icon" type="image/x-icon" href="./resources/img/favIcone.png">
+    <link rel="stylesheet" type="text/css" href="./resources/css/system.css">
+</head>
+<body class="">
+
+    <div class="front-panel">
+        <img src="./resources/img/loadingGif.gif" width="128px">
+    </div>
+
+    <div class="toolbar" id="toolbar">
+
+    </div>
+    <div class="clock-container">
+        <p class="time">00:00</p>
+        <p class="date">Jun 01, 0000</p>
+    </div>
+
+    <!--
+    <div class="fast-menu">
+        <div class="app-item" onclick="instanceWindow(4)" id="mines-button" data-name="Mines" data-type="Game"><img src="/resources/img/minesIcone.png" width="48px" height="48px" alt="Mines icone image" title="Mines icone"><p>Mines</p></div>
+        <div class="app-item" onclick="instanceWindow(4)" id="mines-button" data-name="Mines" data-type="Game"><img src="/resources/img/minesIcone.png" width="48px" height="48px" alt="Mines icone image" title="Mines icone"><p>Mines</p></div>
+        <div class="app-item" onclick="instanceWindow(4)" id="mines-button" data-name="Mines" data-type="Game"><img src="/resources/img/minesIcone.png" width="48px" height="48px" alt="Mines icone image" title="Mines icone"><p>Mines</p></div>
+    </div>
+    -->
+
+    <script src="./resources/js/windows.js"></script>
+    <script src="./resources/js/settings.js"></script>
+    <script src="./resources/js/calculator.js"></script>
+    <script src="./resources/js/clock.js"></script>
+    <script src="./resources/js/chronometer.js"></script>
+    <script src="./resources/js/calendar.js"></script>
+    <script src="./resources/js/mines.js"></script>
+    <!--<script src="/resources/js/sudoku.js"></script>-->
+    <!--<script src="/resources/js/notes.js"></script>-->
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (localStorage.getItem('theme')) {
+            changeTheme(parseInt(localStorage.getItem('theme')));
+        }
+        if (localStorage.getItem('background')) {
+            changeBackground(parseInt(localStorage.getItem('background')));
+        }
+    });
+    </script>
+</body>
+</html>
